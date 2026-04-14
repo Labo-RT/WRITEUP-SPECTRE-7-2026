@@ -1,0 +1,14 @@
+=== LOGS ===
+
+Connexion établie depuis: lab-23-IUT-Annecy
+Timestamp: 2025-04-04 03:47:22
+Commandes exécutées: find
+
+Accès suivant détecté: backup-srv.iut-annecy.local
+Username probable: backup-user
+Agent S7: nyx
+
+[ALERTE] Prochaine cible identifiée: Serveur de Backup
+
+# S7{pr3m13r_p4s_v3rs_l4_v3r1t3}
+

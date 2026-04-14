@@ -1,0 +1,13 @@
+$TTL 300
+@   IN  SOA ns1.ghostshark.local. admin.ghostshark.local. (
+        2026011701
+        3600
+        1800
+        604800
+        86400 )
+
+    IN  NS  ns1.ghostshark.local.
+
+42  IN  PTR ssh-prod-legacy-01.ghostshark.local.
+
+

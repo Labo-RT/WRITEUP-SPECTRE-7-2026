@@ -1,0 +1,45 @@
+$TTL 300
+@   IN  SOA ns1.ghostshark.local. admin.ghostshark.local. (
+        2026011701  ; Serial
+        3600        ; Refresh
+        1800        ; Retry
+        604800      ; Expire
+        86400 )     ; Minimum TTL
+
+    IN  NS  ns1.ghostshark.local.
+
+ns1 IN  A   10.102.76.1
+; ===========================================
+; ÉTAPE 1 : A Record classique
+; ===========================================
+ghostshark.local. IN  A   10.102.76.13
+
+; ===========================================
+; ÉTAPE 2 : TXT avec indice et réponse
+; ===========================================
+n3t    IN  TXT "n3tsh4rk"
+n3t    IN  TXT "hint=look_for_ssh_service"
+
+; ===========================================
+; ÉTAPE 3 : SRV Record (Service Discovery)
+; ===========================================
+; Service secret sur TCP, port 2222
+_ssh._tcp           IN  SRV 10 5 2222 sshserver.ghostshark.local.
+_ssh._udp           IN  SRV 10 5 2222 sshserver.ghostshark.local.
+
+
+; ===========================================
+; ÉTAPE 4 : TXT Final sur le serveur SSH
+; ===========================================
+
+sshserver   IN  A   10.102.74.42
+ssh-prod-legacy-01   IN A   10.102.74.42
+
+ssh-prod-legacy-01   IN TXT "ssh-banner=Authorized access only"
+ssh-prod-legacy-01   IN TXT "ssh-version=OpenSSH_7.2"
+ssh-prod-legacy-01   IN TXT "note=legacy host, do not expose"
+
+@       IN  MX  10 mail.ghostshark.local.
+mail    IN  A   10.7.0.25
+
+

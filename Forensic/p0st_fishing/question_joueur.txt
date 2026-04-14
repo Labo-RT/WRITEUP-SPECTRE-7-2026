@@ -1,0 +1,27 @@
+Un employé du secteur administratif peu formé sur l'igiègne informatique a malheuresement cliqué sur un lien malveillant et un executable c'est lancé sur son PC.
+Il a été découvert a temps mais il nous faut enquêter sur l'origine de l'attaque.
+
+**Attention le challenge est en 2 parties mais utilise le même fichier `memdump.raw`**
+
+## Partie 1 
+
+1/ Quelles est le système d'exploitation et la version du PC de l'employé ?
+
+2/ Trouvez le nom de l'executable suspect. ******.exe
+
+3/ Trouvez le numéro de processus PID associé a cette executable
+
+4/ Quelle le chemin entier où a été installer l'executable
+
+
+## Partie 2
+
+5/ Quelle est est le port sur lequelle écoute le .exe?
+
+6/ Donnez le timestamps (YYYY-MM-DD-HH:mm:ss) quand l'attaquant c'est connecter au PC de l'employer
+
+7/ Quelle commande a executer l'attaquant depuis son revese shell ?
+
+8/ Après avoir pris le contôle du PC, l'attanquant aurait changer le mot de passe de b0by, retrouver le mot de passe qu'a utilisé l'attaquant.
+
+PS: Pour cette question vous avez le droit d'utilisé les outils hashcat ou john uniquement en local

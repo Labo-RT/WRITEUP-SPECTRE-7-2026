@@ -1,0 +1,23 @@
+Avertissement interne – Spectre 7
+Diffusion interdite
+
+Nyx,
+
+Les clés SSH root n’auraient jamais dû quitter le périmètre principal.
+Leur présence sur ce serveur relève uniquement de ta responsabilité.
+
+Cette machine est un serveur central de backup.
+Elle n’existe que pour stocker et déplacer des archives, pas des accès racine.
+
+En laissant ces clés transiter par les sauvegardes, tu as créé un point critique.
+Si quelqu’un y accède, le contrôle root devient immédiat.
+
+Nous te rappelons que Nyx n’est qu’un identifiant opérationnel.
+Ton identité civile — N. L., département R&T — n’est pas protegée.
+
+La situation a été remontée.
+Kronos a été informé.
+
+Corrige l’erreur avant qu’il ne décide de s’en charger lui-même.
+
+— Coordination Spectre 7

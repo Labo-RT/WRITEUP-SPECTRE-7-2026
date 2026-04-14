@@ -1,0 +1,5 @@
+[2025-12-28 03:45:12] SSH Connection: nightfalcon@10.42.23.15
+[2025-12-28 03:47:22] SUDO Command: /usr/bin/**** . 8pmpv5:w|{:wtf}5I.58d`|a
+[2025-12-28 03:52:08] Outbound Connection: backup-srv.iut-annecy.local:2222
+[2025-12-28 03:53:41] File Transfer: unknown.tar.gz (encrypted)
+[2025-12-28 04:01:33] SSH Disconnect

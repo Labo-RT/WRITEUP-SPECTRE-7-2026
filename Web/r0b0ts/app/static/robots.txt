@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /
+
+User-agent: SpectreBot/1.7
+Allow: /hidden-entry.html

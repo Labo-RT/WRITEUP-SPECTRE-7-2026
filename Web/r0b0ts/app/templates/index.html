@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spectre-7 — Dark moodle</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/css_template_moodle.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="header d-flex justify-content-between align-items-center px-4">
+        <div class="d-flex align-items-center">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Spectre-7 Logo"
+                class="spectre-logo me-3">
+
+            <h1 class="h4 mb-0 text-white">Spectre-7 Dark moodle</h1>
+        </div>
+        <div><span class="text-muted">Login</span></div>
+    </header>
+    <main class="container py-5">
+
+        <h2 class="text-white mb-4">Modules disponibles</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="course-card" data-bs-toggle="modal" data-bs-target="#challenge1">
+                    <h5 class="course-title">RES n°102</h5>
+                    <p>User-Agent malveillant</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="course-card" data-bs-toggle="modal" data-bs-target="#challenge2">
+                    <h5 class="course-title">RES n°103</h5>
+                    <p>robots</p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- MODAL CHALLENGE 2 -->
+    <div class="modal fade" id="challenge1" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content text-light">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cours 1 — User-Agent</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <p>Un User-Agent est l’identifiant envoyé par ton navigateur ou ton outil HTTP pour indiquer au
+                        serveur
+                        quel type de client effectue la requête. C’est une simple ligne de texte dans l’en-tête d’une
+                        requête
+                        HTTP, utilisée pour adapter l’affichage, reconnaître un bot, ou filtrer certains accès.</p>
+
+                    <p>Changer son User-Agent revient simplement à dire au serveur “je suis ce client-là”. Rien de plus
+                        que
+                        modifier une chaîne dans les en-têtes HTTP.</p>
+
+                    <p><strong>Comment changer son User-Agent ?</strong></p>
+                    <ul>
+                        <li>curl</li>
+                        <li>Burp Suite</li>
+                        <li>Navigateur</li>
+                    </ul>
+
+                    <p class="text-info">
+                        <strong>CURL</strong> est un outil en ligne de commande pour envoyer des requêtes HTTP sans
+                        navigateur. Il permet de tester facilement un site et de modifier n’importe quel en-tête, dont
+                        le
+                        User-Agent.
+                    </p>
+
+                    <p class="text-info">
+                        <strong>Burp Suite</strong> est un proxy d’interception utilisé en cybersécurité. Il permet de
+                        voir
+                        et modifier chaque requête envoyée par ton navigateur, dont le User-Agent, avant de l’envoyer au
+                        serveur.
+                    </p>
+
+                    <p class="text-info">
+                        <strong>Navigateur</strong> : certains navigateurs permettent de modifier manuellement le
+                        User-Agent
+                        via les outils développeur ou une extension.
+                    </p>
+
+                    <p class="mt-4"><strong>Exemples curl :</strong></p>
+
+                    <pre class="bg-dark p-3 rounded text-white">
+# Envoyer un User-Agent personnalisé
+curl -A "SPECTRE-BOT-ALPHA" http://localhost/page-secrete
+
+                </pre>
+                    <p class="mt-4"><strong>Exemples Burpsuite : <a
+                                href="https://portswigger.net/burp/documentation/desktop/getting-started">Commencer avec
+                                burpsuite</a></strong></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MODAL CHALLENGE 2 -->
+    <div class="modal fade" id="challenge2" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content text-light">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cours 2 — robots.txt</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <p>Le fichier <code>/robots.txt</code> est un petit fichier texte placé à la racine d’un site web
+                        pour
+                        indiquer aux robots (comme les moteurs de recherche) ce qu’ils peuvent explorer ou non. C’est
+                        une
+                        simple recommandation : les robots respectueux le suivent, les autres l’ignorent.</p>
+
+                    <p>Il fonctionne en définissant un <strong>User-Agent</strong> ciblé, suivi de règles comme
+                        <code>Allow</code> ou <code>Disallow</code>, qui indiquent quelles pages explorer ou éviter.
+                    </p>
+
+                    <p>Exemple :</p>
+
+                    <pre class="bg-dark p-3 rounded text-white">
+User-agent: *
+Disallow: /admin/
+                </pre>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

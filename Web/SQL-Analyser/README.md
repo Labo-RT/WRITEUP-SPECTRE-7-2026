@@ -91,7 +91,7 @@ Format : `S7{...}`
 S7{1nj3ct10n_SQL_by_Qu3ry_L0g1c}
 
 ---
-
+https://github.com/user-attachments/assets/ad250344-e520-4160-bca2-9fd35a4d40d3
 ## Writeup interne (réservé à l’orga)
 
 * Identifier l’entrée vulnérable (`username`, `password`)
@@ -101,5 +101,5 @@ S7{1nj3ct10n_SQL_by_Qu3ry_L0g1c}
 * Valider l’accès ou extraire les données attendues
 * Pièges : erreurs de syntaxe, commentaires SQL, ordre des conditions
 
-https://github.com/user-attachments/assets/ad250344-e520-4160-bca2-9fd35a4d40d3
+
 ---

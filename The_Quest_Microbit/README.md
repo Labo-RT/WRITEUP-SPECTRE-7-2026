@@ -108,7 +108,7 @@ On retrouvait bien **SHADOW** en faisant tout l’échange
 
 
 > Petite mention aux 1ʳᵉˢ années qui ont fait leur XOR avec un papier crayon bits par bits ça m'a fait chaud au cœur ^^
-
+> PS: la RFC pouvait porter a confusion j'avoue hi hi
 
 ### Flag
 

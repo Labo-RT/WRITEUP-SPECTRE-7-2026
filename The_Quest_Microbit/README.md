@@ -118,7 +118,7 @@ S7{SHADOW}
 
 ---
 
-## 🚀 Étape 3 — Ouvrir la porte `[Hard]`
+## Étape 3 — Ouvrir la porte `[Hard]`
 
 ### Objectif
 
@@ -153,7 +153,7 @@ S7{R4D10_PR0T0C0L}
 
 ---
 
-## 🐛 Problèmes fréquents
+## Problèmes fréquents
 
 | Problème | Solution |
 | --- | --- |
@@ -164,7 +164,7 @@ S7{R4D10_PR0T0C0L}
 
 ---
 
-## 🔐 Informations secrètes `[ORGA UNIQUEMENT]`
+## Informations secrètes `[ORGA UNIQUEMENT]`
 
 | Info | Valeur |
 | --- | --- |

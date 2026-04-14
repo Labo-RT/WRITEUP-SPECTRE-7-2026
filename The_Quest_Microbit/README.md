@@ -73,7 +73,6 @@ while True:
     sleep(50)
 ```
 ![image2.png](images/image2.png)
-![etape1.MOV](images/etape1.mov)
 
 ### Flag
 
@@ -99,7 +98,11 @@ Grâce à la RFC et aux trames sniffer, on pouvait retrouver le secret échangé
 
  
 
-![ETAPE2-MICROBIT.mp4](images/ETAPE2-MICROBIT.mp4)
+
+
+https://github.com/user-attachments/assets/9e044fe4-5e4e-4794-bd41-25f31d30ece1
+
+
 
 On retrouvait bien **SHADOW** en faisant tout l’échange
 
@@ -136,7 +139,11 @@ badge  ←  FLAG:xxxxxxxx    ←  lecteur
 PC → S7{R4D10_PR0T0C0L}
 ```
 
-[final-microbit.MOV](images/final-microbit.mov)
+
+
+
+
+
 
 ### Flag
 

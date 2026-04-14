@@ -1,0 +1,83 @@
+:root {
+    /* PALETTE SPECTRE-7 */
+    --black: #000000;
+    --dark-bg: #0b0f16;
+    --panel-bg: #121821;
+
+    --dark-red: #7f1518;
+    --mid-red: #c61e23;
+    --bright-red: #ff3b3f;
+    --red-glow: rgba(255, 0, 0, 0.15);
+
+    --grey: #b3b3b3;
+    --light-grey: #d6d6d6;
+    --white: #ffffff;
+
+    --border: #1f2734;
+}
+
+/* GLOBAL */
+body {
+    background: var(--dark-bg);
+    color: var(--white);
+    font-family: Consolas, monospace;
+}
+
+/* PANELS (login, challenge box, etc.) */
+.login-box,
+.challenge-box {
+    background: var(--panel-bg);
+    border: 1px solid var(--mid-red);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 12px var(--red-glow);
+}
+
+/* TITRES */
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: var(--bright-red);
+    letter-spacing: 0.5px;
+}
+
+.spectre-logo {
+    width: 80px;
+}
+
+/* BOUTONS */
+.btn-red {
+    background: var(--mid-red);
+    border: 1px solid var(--bright-red);
+    color: var(--white);
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-red:hover {
+    background: var(--bright-red);
+    box-shadow: 0 0 8px var(--red-glow);
+}
+
+/* TEXTE SECONDAIRE */
+.text-muted {
+    color: var(--grey) !important;
+}
+
+.text-info {
+    color: var(--light-grey) !important;
+}
+
+/* HEADER */
+.header {
+    background: #10141d;
+    border-bottom: 1px solid var(--border);
+}
+
+/* FOOTER */
+.footer {
+    color: var(--grey);
+    font-size: 0.85rem;
+    margin-top: 4rem;
+}

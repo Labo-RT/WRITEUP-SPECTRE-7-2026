@@ -164,7 +164,7 @@ S7{R4D10_PR0T0C0L}
 
 ---
 
-## Informations secrètes `[ORGA UNIQUEMENT]`
+## Informations
 
 | Info | Valeur |
 | --- | --- |

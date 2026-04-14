@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panneau Administrateur — Spectre-7</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header class="header d-flex justify-content-between align-items-center px-4 py-2">
+        <div class="d-flex align-items-center">
+            <img src="./images/logo.png" class="spectre-logo me-3">
+            <h1 class="h5 mb-0 text-white">Spectre-7 — Admin Panel</h1>
+        </div>
+        <div><span class="text-muted">Admin</span></div>
+    </header>
+
+    <main class="container py-5">
+
+        <div class="challenge-box">
+            <h2 class="challenge-title">Zone réservée — Accès interne Spectre-7</h2>
+            <p>Ce panneau est destiné aux opérateurs internes de l’équipe Spectre-7.</p>
+
+            <div class="mt-4">
+                <h5>Membres enregistrés</h5>
+                <ul>
+                    <li><strong>NightFalcon</strong> — Analyste CTI</li>
+                    <li><strong>NEX-07</strong> — Responsable infra</li>
+                    <li><strong>KaliMorph</strong> — Opérateur RÉDa</li>
+                    <li><strong>ShadowPulse</strong> — Exploit dev</li>
+                </ul>
+            </div>
+
+            <div class="mt-4">
+                <h5>Journal système — Derniers accès</h5>
+                <pre class="bg-dark p-3 border rounded">
+[INFO] Ping
+[INFO] Cookie integrity : bypass detected
+[WARN] Elevation attempt observed
+                </pre>
+            </div>
+
+
+            <div class="mt-4">
+                <h5>Administration des status</h5>
+                <pre class="bg-dark p-3 border rounded">
+[UP] Grafana-attack-success -- DateTime : 2026-04-01
+    [+] 200-OK
+[UP] Control&Command -- DateTime : 2026-03-29
+    [+] 200-OK
+[Down] ForgeMalware -- DateTime : 2026-04-02
+    [+] Critique -- timeout of 48000ms exceeded
+                </pre>
+                <p>Administration central: <a href="./controle.html">CONTROL</a></p>
+            </div>
+        </div>
+
+        <div class="footer text-center mt-5">Spectre-7 — internal systems</div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

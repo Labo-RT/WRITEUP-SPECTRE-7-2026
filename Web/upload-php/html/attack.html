@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spectre-7 — Attack Vector</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body class="bg-dark text-light">
+    <header class="header d-flex justify-content-between align-items-center px-4 py-2 border-bottom border-secondary">
+    <div class="d-flex align-items-center">
+        <img src="./images/logo.png" class="spectre-logo me-3">
+        <h1 class="h5 mb-0">Spectre-7 — Attack Vector</h1>
+    </div>
+    <div class="text-muted small">nyx@bastion:~$</div>
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">List pages</button>
+
+    <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul>
+            <li><a href="./status.html">Status</a></li>
+            <li><a href="./renseignement.php">Renseignement</a></li>
+            <li><a href="./attack.html">Attack</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="container py-5">
+      <div class="challenge-box">
+        <h2 class="challenge-title mb-4">Interface d'Engagement Actif</h2>
+
+        <!-- Terminal minimal -->
+        <div
+          class="terminal bg-black border border-secondary rounded p-4"
+          style="
+            font-family: &quot;Courier New&quot;, monospace;
+            font-size: 14px;
+            height: 500px;
+            overflow-y: auto;
+          "
+        >
+          <div class="mb-2">
+            <span class="text-danger">[NEX-07@control]</span>
+            <span class="text-green">$</span> ./engage.sh target-corp.com
+          </div>
+
+          <div class="text-success mb-1">
+            [+] Reconnaissance passive initiée
+          </div>
+          <div class="text-success mb-1">[+] 47 sous-domaines énumérés</div>
+          <div class="text-success mb-1">
+            [+] 12 endpoints vulnérables identifiés
+          </div>
+
+          <div class="text-warning mb-1">
+            [!] Payload ForgeMalware déployé (CVE-2026-1337)
+          </div>
+          <div class="text-warning mb-1">
+            [!] Shell interactive obtenue: 192.168.99.42:4444
+          </div>
+
+          <div class="text-success mb-1">[+] Pivot vers DMZ réussi</div>
+          <div class="text-danger mb-2">
+            [-] AD compromise: DomainAdmin pwned
+          </div>
+
+          <div class="text-muted mb-3 small">
+            [*] Exfiltration en cours: 2.3TB / 5.7TB
+          </div>
+
+          <span class="text-danger">[NightFalcon@tty09]</span>
+          <span class="text-green">$</span> cat /flag.txt
+          <div class="text-info mt-2 p-2 bg-dark border-start border-info ps-3">
+            haha it's not the good one :)
+          </div>
+
+          <div class="mt-4 pt-3 border-top border-secondary">
+            <span class="text-muted small"
+              >Session active | Ctrl+C pour abort | Uptime: 00:47:22</span
+            >
+          </div>
+        </div>
+
+        <!-- Liens basiques -->
+        <div class="text-center mt-4">
+          <a href="./status.html" class="btn btn-outline-secondary me-2"
+            ><i class="fas fa-arrow-left"></i> Status</a
+          >
+          <a href="./controle.html" class="btn btn-outline-secondary"
+            ><i class="fas fa-images"></i> Contrôle</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

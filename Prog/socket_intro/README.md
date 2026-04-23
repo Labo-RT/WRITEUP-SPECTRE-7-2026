@@ -1,9 +1,8 @@
-# 🎯 CTF – Spectre 7  
-## Documentation interne du challenge
+# CTF – Spectre 7  
 
 ---
 
-## 📋 Informations générales
+## Informations générales
 
 | Champ              | Valeur à remplir |
 |--------------------|------------------|
@@ -14,13 +13,13 @@
 
 ---
 
-## 📝 Description du challenge
+## Description du challenge
 
 Spectre 7 possède un service TCP qui serait utilisé pour obtenir diverses informations. La personne devra donc se connecter avec un script afin de communiquer avec la socket et obtenir le flag.
 
 ---
 
-## 🛠️ Techniques utilisées
+## Techniques utilisées
 Décrire uniquement les mécaniques réelles exploitées par le joueur :
 - Scripting
 - Utilisation de sockets
@@ -29,20 +28,20 @@ Décrire uniquement les mécaniques réelles exploitées par le joueur :
 
 ---
 
-## 🧪 Création du challenge
+## Création du challenge
 Décrire brièvement :
 - Création d'un script `server.py` qui sera exécuté sur une machine distante et invisible aux yeux des joueurs
 - Création d'un script client d'exemple très simpliste afin de pouvoir tester le challenge
 
 ---
 
-## ⚠️ Problèmes rencontrés
+## Problèmes rencontrés
 Lister les éventuels soucis durant la création :
 - Aucun
 
 ---
 
-## 🗂️ Structure du projet
+## Structure du projet
 Donner une vue rapide :
 ```
 ./
@@ -54,7 +53,7 @@ Donner une vue rapide :
 
 ---
 
-## 🧩 Déploiement interne
+## Déploiement interne
 Instructions utiles uniquement à l’équipe :
 - Aucune lib à installer
 - Lancer server.py sur la machine distante (`python3 server.py`)
@@ -62,14 +61,14 @@ Instructions utiles uniquement à l’équipe :
 
 ---
 
-## 🏁 Flag
+## Flag
 Format du flag : `S7{...}`
 Flag : `S7{App_Ech0_S3rv}`
 Emplacement / méthode de génération : Dans le script `server.py`, à récupérer depuis la connexion TCP
 
 ---
 
-## ✍️ Writeup interne (réservé à l’orga)
+## Writeup interne (réservé à l’orga)
 Explication claire de la résolution :
 - Création d'un script (Python dans mon example)
 - Importer la librairie socket
